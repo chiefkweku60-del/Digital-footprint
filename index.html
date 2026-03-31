@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Footprint | Modern Portfolio</title>
+  <meta name="description" content="Programming for Beginners video showcase and report by group members." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Digital Footprint</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video & Report</a></li>
+        <li><a href="#team">Group Menbers</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero container">
+      <h1>Digital Footprint</h1>
+      <div class="search-bar">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="search" placeholder="Search your digital artifacts...">
+      </div>
+    </section>
+
+    <!-- Stats >
+    <section class="stats container">
+      <div class="stat-card">
+        <div class="stat-number" data-target="1">0</div>
+        <div class="stat-label">Videos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="1">0</div>
+        <div class="stat-label">Reports</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="0">0</div>
+        <div class="stat-label">Downloads</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label">Team Members</div>
+      </div>
+    </section-->
+
+    <!-- Content -->
+    <section id="content" class="container">
+      <div class="content-grid">
+        <section id="video" class="card" data-search="work video youtube programming beginners">
+          <h2>Programming for Beginners</h2>
+          <div class="media-wrapper">
+            <iframe src="https://www.youtube.com/embed/bJzb-RuUcMU" title="Programming for Beginners" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="note"><a href="https://www.youtube.com/watch?v=bJzb-RuUcMU" target="_blank">Open on YouTube</a></p>
+          <div class="links">
+            <a href="#" data-modal="videoModal">View Fullscreen</a>
+            <button class="btn download-btn">📥 Watch on YouTube</button>
+          </div>
+        </section>
+
+        <section id="report" class="card" data-search="report pdf exploit">
+          <h2>Report PDF</h2>
+          <div class="media-wrapper">
+            <iframe src="The_Exploit_Vol01_Expanded.pdf" title="Digital Footprint Report" frameborder="0">
+              Your browser does not support inline PDF viewing.
+            </iframe>
+          </div>
+          <p class="note"><code>The_Exploit_Vol01_Expanded.pdf</code></p>
+          <div class="links">
+            <a href="The_Exploit_Vol01_Expanded.pdf" target="_blank" rel="noopener" data-modal="pdfModal">View Fullscreen</a>
+            <button class="btn download-btn">📥 Download PDF</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <iframe src="https://www.youtube.com/embed/bJzb-RuUcMU" title="Programming for Beginners Fullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%; height:80vh;"></iframe>
+    </div>
+  </div>
+
+  <!-- PDF Modal -->
+  <div id="pdfModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <iframe src="The_Exploit_Vol01_Expanded.pdf" style="width:100%; height:80vh;"></iframe>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <section id="team" class="container">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Group Members</h2>
+    <div class="content-grid">
+      <div class="card" data-search="team adu martin yeboah">
+        <h3>Adu Martin Yeboah</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/adu-martin-yeboah-643629256?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team kelvin opoku agyei">
+        <h3>Kelvin Opoku Agyei</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/kelvin-opoku-agyei-5514833a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team manasseh osei black demy">
+        <h3>Manasseh Osei</h3>
+        <div class="links">
+          <a href="https://gh.linkedin.com/in/black-demy-2b2230300" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team sumana abdullai khalifax">
+        <h3>Sumana Abdullai</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/khalifax-abdullai-sumana-2ba5352b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team edward sampson">
+        <h3>Edward Sampson</h3>
+        <div class="links">
+          <a href="https://gh.linkedin.com/in/edward-sampson-6847863bb" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team edward sampson">
+        <h3>Abdallah Mohammed</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/abdallah-mohammed-134b223bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team edward sampson">
+        <h3>Tamara Tandoh</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/tamara-tandoh-6a948a313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card" data-search="team edward sampson">
+        <h3>Osei Michael</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/osei-michael-nyamekye-7912202b1" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+       <div class="card" data-search="team edward sampson">
+        <h3>Abena Owusua</h3>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/abena-owusua-749b393bb?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="social-links">
+      <a href="#" aria-label="GitHub">📂</a>
+      <a href="https://www.linkedin.com/in/kelvin-opoku-agyei-5514833a8" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+    <p>&copy; 2024 Digital Footprint. Open <code>index.html</code> in browser.</p>
+    <p>Group Project by Adu Martin Yeboah, Kelvin Opoku Agyei, Manasseh Osei, Sumana Abdullai</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
